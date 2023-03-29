@@ -129,5 +129,118 @@ describe("Roller tests", ()=> {
 });
 
 
+describe("Roller tests", ()=> {
+  test("distribution function when some rolls made", () => {
+  let roller: Roller = new Roller(6);
+  roller.roll(2);
+
+  // 2. invoke action
+  let actual: Map<number, number> = roller.distribution();
+
+  // 3. assert expected outcome
+  expect(actual.get(3)).toBe(0);
+});
+});
+
+describe("Roller tests", ()=> {
+  test("distribution function when some rolls made", () => {
+  let roller: Roller = new Roller(6);
+  roller.roll(2);
+
+  // 2. invoke action
+  let actual: Map<number, number> = roller.distribution();
+
+  // 3. assert expected outcome
+  expect(actual.get(4)).toBe(0);
+});
+});
+
+describe("Roller tests", ()=> {
+  test("distribution function when some rolls made", () => {
+  let roller: Roller = new Roller(6);
+  roller.roll(2);
+
+  // 2. invoke action
+  let actual: Map<number, number> = roller.distribution();
+
+  // 3. assert expected outcome
+  expect(actual.get(6)).toBe(0);
+});
+});
+
+
+describe("Roller tests", ()=> {
+  test("distribution function when some rolls made", () => {
+  let roller: Roller = new Roller(6);
+  roller.roll(4);
+
+  // 2. invoke action
+  let actual: Map<number, number> = roller.distribution();
+
+  // 3. assert expected outcome
+  expect(actual.get(6)).toBe(0);
+});
+});
+
+
+describe("Roller tests", ()=> {
+  test("distribution function when some rolls made", () => {
+  let roller: Roller = new Roller(6);
+  roller.roll(6);
+
+  // 2. invoke action
+  let actual: Map<number, number> = roller.distribution();
+
+  // 3. assert expected outcome
+  expect(actual.get(6)).toBe(1);
+});
+});
+
+
+describe("Roller tests", ()=> {
+  test("distribution function when some rolls made", () => {
+  let roller: Roller = new Roller(6);
+
+  roller.roll(6);
+
+  // 2. invoke action
+  let actual: Map<number, number> = roller.distribution();
+
+  // 3. assert expected outcome
+  expect(actual.get(1)).toBe(0);
+
+  });
+});
+
+describe("Roller tests", ()=> {
+  test("distribution function when some rolls made", () => {
+  let roller: Roller = new Roller(6);
+
+  roller.roll(4);
+
+  // 2. invoke action
+  let actual: Map<number, number> = roller.distribution();
+
+  // 3. assert expected outcome
+  expect(actual.get(2)).toBe(0);
+
+  });
+});
+
+
+describe("Roller tests", ()=> {
+  test("distribution function when some rolls made", () => {
+  let roller: Roller = new Roller(6);
+
+  roller.roll(6);
+
+  // 2. invoke action
+  let actual: Map<number, number> = roller.distribution();
+
+  // 3. assert expected outcome
+  expect(actual.get(3)).toBe(0);
+
+  });
+});
 
 
